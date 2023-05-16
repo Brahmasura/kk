@@ -1,0 +1,131 @@
+.headerContainer {
+    padding: 30px;
+    background: rgb(172,172,172);
+background: white;
+}
+
+ul{
+    margin: 0px !important;
+}
+
+ul li {
+    display: inline-flex;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-bottom: 0px !important;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navBarLinkActive{
+    color: #9F268D;
+}
+
+.navBarLinkActive{
+    color: #000000;
+}
+
+
+.joinUsBtn{
+padding: 8px 12px;
+gap: 8px;
+width: 118px;
+height: 45px;
+background: black !important;
+border-radius: 2px !important;
+font-family: 'Kanit';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+text-align: center;
+font-feature-settings: 'liga' off;
+color: #FFFFFF;
+border: none;
+}
+
+
+// added this class 
+.activeLinkItem{
+    background: rgba(154, 154, 154, 0.15);
+    cursor: default;
+    color: black
+}
+
+
+
+.headerLogo img{
+    // width: 147px !important;
+    // min-height: 33px !important;
+    // height: auto;
+    width: 100%;
+    height: auto;
+    max-height: 40px;
+    padding-left: 50px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1024px) and (orientation: landscape) {
+
+    .headerLogo img{
+        width: 84px !important;
+        height: 24px !important;
+        padding-left:0px;
+    }
+
+}
+
+
+@media screen and (max-width: 556px) and (orientation: portrait){
+    .headerLogo img{
+        width: 84px !important;
+        height: 24px !important;
+        padding-left: 0px;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: white;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) and (orientation: landscape), (orientation: portrait) {
+  
+  ul li{ 
+    margin-right: 5px !important;
+  }  
+   
+}
+
+
+// here correcting the iphone bugs for the viewport of 664 by 390 on landscape
+@media screen and (min-width:567px) and (max-width:768px) and (orientation:landscape), (orientation:portrait){
+  .joinUsBtn{
+    width:98px;
+    height:40px;
+  }
+
+  ul{
+    padding-left: 0px;
+  }
+
+  .headerList a{
+    padding: 0.5rem 0rem;
+    margin: 5px;
+  }
+}
+
+// iphone changes done
