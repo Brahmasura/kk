@@ -3,12 +3,12 @@ import Home from "../Pages/Home/Home";
 export const navLinks = [
     {
         title: 'Home',
-        path: "/home",
+        path: "/",
         exact: true,
         element: <Home />
     },
     {
-        title: 'about us ',
+        title: 'About Us ',
         path: "/aboutUs",
         exact: true,
         element: <Home />

@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
+import kkLogo from "../../../Assets/header/kkLogo.svg";
 
 const Header = () => {
   // for list icon clicks
 
   // for mobile screen check
   const [isMobile, setIsMobile] = useState(false);
+  const [activeLink, setActiveLink] = useState(1);
+
+  const handleLinkClick = (index) => {
+    setActiveLink(index);
+  }
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 576px)");
@@ -42,7 +48,7 @@ const Header = () => {
         <div class={`container-fluid ${styles.headerContainer}`}>
           <nav className={`navbar navbar-expand-lg navbar-light ${styles.headerLogo}`}>
             <a className="navbar-brand " href="#home_section">
-              {/* <img src={logo} alt="brand logo" /> */}
+              <img src={kkLogo} alt="brand logo" />
             </a>
             <button
               className="navbar-toggler"
@@ -64,19 +70,19 @@ const Header = () => {
                 </li>
                 <li className="navbar-item">
                   <a className="nav-link" href="#product_section">
-                    EV Chargers
+                    About Us
                   </a>
                 </li>
                 <li className="navbar-item">
                   <a className="nav-link" href="#product_section">
-                    Li Ion Solution
+                    Products
                   </a>
                 </li>
-                <li className="navbar-item">
+                {/* <li className="navbar-item">
                   <a className="nav-link" href="#navigation_section">
                     kk Grid
                   </a>
-                </li>
+                </li> */}
                 <li className="navbar-item">
                   <a href="#contact_section">
                     <button className={styles.joinUsBtn}>Get kk</button>
@@ -91,49 +97,49 @@ const Header = () => {
   } else {
     return (
       <>
-      <div className="fixed-top" >
+      {/* <div className="fixed-top" > */}
         <div className="container-fluid">
           <div
             className={`row ${styles.headerContainer} justify-content-center align-items-center`}
           >
-            <div className={`col-sm-2 col-md-2 col-lg-2 d-flex justify-content-start pe-0 ${styles.headerLogo}`} >
+            <div className={`col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center pe-0 ${styles.headerLogo}`} >
               <a href="#home_section">
-              {/* <img src={logo} alt="logo" className="img-fluid" /> */}
+              <img src={kkLogo} alt="logo" className="img-fluid" />
               </a>
             </div>
-            <div className=" col-sm-8 col-md-8 d-flex justify-content-center">
+            <div className=" col-sm-8 col-md-8 d-flex justify-content-start">
               <ul className={styles.headerList}>
               <li
                     className={`nav-li`}
-                  ><a className="nav-link" href="#home_section">
+                  ><a className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} href="#home_section" onClick={() => handleLinkClick(1)}>
                       Home
                     </a></li>
                     <li
                     className={'nav-li'}
-                  ><a className="nav-link" href="#product_section">
-                      EV Chargers
+                  ><a className={activeLink === 2 ? styles.activeTitle : styles.inactiveTitle} href="#product_section" onClick={() => handleLinkClick(2)}>
+                      About Us
                     </a></li>
                     <li 
                     className={'nav-li'}
-                  ><a className="nav-link" href="#product_section">
-                     Li Ion Solution
+                  ><a className={activeLink === 3 ? styles.activeTitle : styles.inactiveTitle} href="#product_section" onClick={() => handleLinkClick(3)}>
+                     Products
                     </a></li>
-                    <li 
+                    {/* <li 
                     className={'nav-li'}
                   ><a className="nav-link" href="#navigation_section">
                       kk Grid
-                    </a></li>
+                    </a></li> */}
                 
               </ul>
             </div>
             <div className="col-sm-2 col-md-2">
-              <a href="#contact_section">
-              <button className={styles.joinUsBtn}>Get kk</button>
-              </a>
+              {/* <a href="#contact_section"> */}
+              <button className={styles.joinUsBtn}><p>Request A Qoute</p></button>
+              {/* </a> */}
             </div>
           </div>
         </div>
-        </div>
+        {/* </div> */}
       </>
     );
   }
