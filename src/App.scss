@@ -15,7 +15,7 @@
 
 
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* make scrollbar transparent */
   display:none !important;
@@ -29,6 +29,16 @@ body::-webkit-scrollbar {
     // scroll-snap-stop: center;
     // height: 100vh;
     overflow-y: scroll;
+
+  }
+
+  .scroller::-webkit-scrollbar{
+    display:none !important;
+  }
+ 
+
+  .theLayout::-webkit-scrollbar{
+    display:none;
   }
   section {
     scroll-snap-align: center;
@@ -93,10 +103,10 @@ footer {
 
 
 
-.nav-link:focus,
-.nav-link:hover {
-  color: #000000;
-}
+// .nav-link:focus,
+// .nav-link:hover {
+//   color: #000000;
+// }
 
 $accordion-button-focus-border-color: white;
 $accordion-button-focus-box-shadow: none;

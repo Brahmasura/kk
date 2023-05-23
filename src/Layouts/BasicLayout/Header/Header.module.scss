@@ -9,6 +9,10 @@ ul{
   
 }
 
+.nav-link{
+  padding:0.5rem 0.5rem !important;
+}
+
 ul li {
   display: inline-flex;
   text-decoration: none;
@@ -22,17 +26,20 @@ ul li {
   justify-content: center;
   text-align: center;
   cursor: pointer;
+  
 
   .activeTitle{
   
-    color: #ED3237;
+    color: #ED3237 !important;
     text-decoration: none !important;
+    padding: 0.5rem 0.5rem !important;
 
   }
 
   .inactiveTitle{
-   color: #303030;
+   color: #303030 !important;
    text-decoration: none !important;
+   padding: 0.5rem 0.5rem !important;
 
   }
    

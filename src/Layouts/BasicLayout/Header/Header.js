@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 import kkLogo from "../../../Assets/header/kkLogo.svg";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   // for list icon clicks
@@ -31,17 +32,7 @@ const Header = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
-  const handleScroll=()=>{
-    // console.log('shreyas')
-    // window.document.body.scrollTop = 0; // For Safari
-    // window.document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    // window.scroll({
-    //   top: 0, 
-    //   left: 0, 
-    //   behavior: 'smooth'
-    // });
-  }
-
+  
   if (isMobile) {
     return (
       <>
@@ -103,32 +94,30 @@ const Header = () => {
             className={`row ${styles.headerContainer} justify-content-center align-items-center`}
           >
             <div className={`col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center pe-0 ${styles.headerLogo}`} >
-              <a href="#home_section">
+              <NavLink to={'/'}>
               <img src={kkLogo} alt="logo" className="img-fluid" />
-              </a>
+              </NavLink>
             </div>
             <div className=" col-sm-8 col-md-8 d-flex justify-content-start">
               <ul className={styles.headerList}>
               <li
-                    className={`nav-li`}
-                  ><a className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} href="#home_section" onClick={() => handleLinkClick(1)}>
+                      // className={'nav-li'}
+                  ><NavLink  to={'/'} className={activeLink === 1 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(1)}>
                       Home
-                    </a></li>
-                    <li
-                    className={'nav-li'}
-                  ><a className={activeLink === 2 ? styles.activeTitle : styles.inactiveTitle} href="#product_section" onClick={() => handleLinkClick(2)}>
-                      About Us
-                    </a></li>
+                    </NavLink></li>
                     <li 
-                    className={'nav-li'}
-                  ><a className={activeLink === 3 ? styles.activeTitle : styles.inactiveTitle} href="#product_section" onClick={() => handleLinkClick(3)}>
+                    //  className={'nav-li'}
+                   
+                  ><NavLink  to={'/'}  className={activeLink === 2 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(2)} >
+                      About Us
+                    </NavLink></li>
+                    <li 
+                    //  className={'nav-li'}
+                    
+                  ><NavLink to={'/products'} className={activeLink === 3 ? styles.activeTitle : styles.inactiveTitle} onClick={() => handleLinkClick(3)}  >
                      Products
-                    </a></li>
-                    {/* <li 
-                    className={'nav-li'}
-                  ><a className="nav-link" href="#navigation_section">
-                      kk Grid
-                    </a></li> */}
+                    </NavLink></li>
+                   
                 
               </ul>
             </div>
