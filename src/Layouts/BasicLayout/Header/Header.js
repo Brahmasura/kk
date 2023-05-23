@@ -69,11 +69,7 @@ const Header = () => {
                     Products
                   </a>
                 </li>
-                {/* <li className="navbar-item">
-                  <a className="nav-link" href="#navigation_section">
-                    kk Grid
-                  </a>
-                </li> */}
+              
                 <li className="navbar-item">
                   <a href="#contact_section">
                     <button className={styles.joinUsBtn}>Get kk</button>
@@ -122,9 +118,10 @@ const Header = () => {
               </ul>
             </div>
             <div className="col-sm-2 col-md-2">
-              {/* <a href="#contact_section"> */}
+              <NavLink to='/contactUs' onClick={() => handleLinkClick(4)}>
               <button className={styles.joinUsBtn}><p>Request A Qoute</p></button>
-              {/* </a> */}
+              </NavLink>
+            
             </div>
           </div>
         </div>
