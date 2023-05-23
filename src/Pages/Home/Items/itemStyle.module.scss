@@ -1,0 +1,68 @@
+.productsContainer {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    /* or 167% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    color: #000000;
+  }
+
+  a {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #ff3b00;
+  }
+
+
+}
+
+
+
+.firstDiv{
+ background:url("../../../Assets/home/productOne.png");
+ background-size:cover;
+ background-position: center;
+ width:400px;
+ height:400px;
+}
+
+.secondDiv{
+
+ background:url("../../../Assets/home/productTwo.png");
+ background-size:cover;
+ background-position: center;
+ width:400px;
+ height:400px;
+}
+
+.thirdDiv{
+ background:url("../../../Assets/home/productOne.png");
+ background-size:cover;
+ background-position: center;    
+ width:400px;
+ height:400px;
+}
+
+

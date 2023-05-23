@@ -6,57 +6,93 @@ background: white;
 
 ul{
     margin: 0px !important;
+  
+}
+
+.nav-link{
+  padding:0.5rem 0.5rem !important;
 }
 
 ul li {
-    display: inline-flex;
-    text-decoration: none;
-    margin-right: 30px;
-    margin-bottom: 0px !important;
-    font-family: 'Kanit';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  margin-right: 50px;
+  margin-bottom: 0px !important;
+  font-family: "helvetica";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  
+
+  .activeTitle{
+  
+    color: #ED3237 !important;
+    text-decoration: none !important;
+    padding: 0.5rem 0.5rem !important;
+
+  }
+
+  .inactiveTitle{
+   color: #303030 !important;
+   text-decoration: none !important;
+   padding: 0.5rem 0.5rem !important;
+
+  }
+   
 }
 
-.navBarLinkActive{
-    color: #9F268D;
-}
+// .navBarLinkActive{
+//     color: #9F268D;
+// }
 
-.navBarLinkActive{
-    color: #000000;
-}
+// .navBarLinkActive{
+//     color: #000000;
+// }
 
 
 .joinUsBtn{
-padding: 8px 12px;
-gap: 8px;
-width: 118px;
-height: 45px;
-background: black !important;
-border-radius: 2px !important;
-font-family: 'Kanit';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-font-feature-settings: 'liga' off;
-color: #FFFFFF;
-border: none;
+
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 20px 16px;
+gap: 10px;
+
+border:none;
+
+background: #FF0008;
+
+p{
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0px;
+  /* identical to box height, or 0% */
+  
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  text-decoration: none !important;
+  margin-bottom:0;
 }
 
 
-// added this class 
-.activeLinkItem{
-    background: rgba(154, 154, 154, 0.15);
-    cursor: default;
-    color: black
 }
+
+
+// // added this class 
+// .activeLinkItem{
+//     background: rgba(154, 154, 154, 0.15);
+//     cursor: default;
+//     color: black
+// }
 
 
 
@@ -67,7 +103,11 @@ border: none;
     width: 100%;
     height: auto;
     max-height: 40px;
-    padding-left: 50px;
+    // padding-left: 50px;
+}
+
+.headerList a{
+  font-family: "helvetica";
 }
 
 

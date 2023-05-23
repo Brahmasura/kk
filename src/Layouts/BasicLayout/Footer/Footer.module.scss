@@ -1,119 +1,237 @@
-// footer sytling
-
 .footerContainer {
-  background: black;
+  background: #fff7f7;
+  padding:7%;
 }
 
-.footerContent {
-  padding: 25px 50px 25px;
-  color: white;
-}
-
-ul {
-  text-align: left;
-}
-
-.copyright p {
-  font-family: Kanit;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0px;
-  text-align: left;
-}
-
-@media screen and (max-width: 576px) {
-  .footerContent {
-    padding: 5% 0 0 0;
-  }
-
-  .logoColumn img {
-    width: 30%;
-    margin-top: 4%;
-  }
-
-  .linkColumn {
-    width: 100%;
-    margin: 3% auto;
-  }
-
-  .linkColumn ul {
-    padding-inline-start: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .linkColumn li {
-    margin: auto 0 !important;
-    font-family: Kanit;
-    font-size: 12px;
+.footColOne {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  p {
+    font-family: "Karla";
+    font-style: normal;
     font-weight: 400;
-    line-height: 10px;
-    letter-spacing: 0px;
-  }
-
-  .iconColumn {
-    width: 100% !important;
-    justify-content: start !important;
-    margin-top: 4%;
-  }
-
-  .iconColumn a {
-    width: 66px;
-    display: flex;
-    justify-content: start !important;
-  }
-
-  .firstFooterIcon {
-    margin-left: 0 !important;
-  }
-
-  .iconColumn img {
-    display: flex;
-    height: 20.434892654418945px;
-    width: 68.92535400390625px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
-  }
-
-  .footerEnd {
-    margin-top: 25px !important;
-  }
-
-  .copyRight {
-    font-family: Kanit;
-    font-size: 10px;
-    font-weight: 200;
+    font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0px;
-    text-align: left;
-    margin-top: 5% !important;
-    padding-left: 0 !important;
+    /* or 171% */
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: start;
+    text-align: start;
+
+    color: #1d1f2e;
+  }
+
+  img{
+    margin-bottom:10%;
   }
 }
 
-@media screen and (max-width: 900px) and (orientation: landscape),
-  (orientation: portrait) {
-  .logoColumn {
-    margin-bottom: 10px;
+.footColTwo {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 35%;
   }
 
-  .linkColumn {
-    margin:13px auto;
+  .firstFootLink {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #3d4246;
+    margin-bottom: 25%;
   }
 
-  .linkColumn ul {
-    padding-left: 0px !important;
+  a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-transform: capitalize;
+    text-align: left;
+
+    color: rgba(29, 31, 46, 0.7);
+  }
+}
+
+.footColThree {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 35%;
   }
 
-  .iconColumn {
-    justify-content: start !important;
+  .firstFootLink {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #3d4246;
+    margin-bottom: 10%;
   }
 
-  .footerEnd {
-    margin-top: 25px !important;
+  a {
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-transform: capitalize;
+
+    color: rgba(29, 31, 46, 0.7);
+    text-align: start;
+  }
+}
+
+.footColFour {
+  text-align: start;
+  padding-left: 5%;
+  .footerTitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #3d4246;
+    margin-bottom: 3%;
+  }
+
+  .footerAddress {
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    display: flex;
+    align-items: center;
+
+    color: #1d1f2e;
+  }
+
+  .footerMail {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #3d4246;
+  }
+
+  .footerTelephone {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #3d4246;
+  }
+}
+
+.footColFifth {
+  text-align: start;
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+
+  input {
+    background: #ffffff;
+    border: 1px solid #7796a8;
+    border-radius: 2px 0px 0px 2px;
+    margin-bottom: 8%;
+  }
+
+  input::placeholder {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+  }
+
+  button {
+    background: #ed3237;
+    box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+    border:none;
+    border-radius: 0px 2px 2px 0px;
+    padding:5%;
+
+    p {
+      margin-bottom: 0;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height, or 150% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+     
+    }
   }
 }

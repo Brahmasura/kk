@@ -1,6 +1,8 @@
 import Home from "../Pages/Home/Home";
+import Products from "../Pages/Products/Products";
 
 export const navLinks = [
+
     {
         title: 'Home',
         path: "/",
@@ -8,22 +10,17 @@ export const navLinks = [
         element: <Home />
     },
     {
-        title: 'EV Chargers',
-        path: "/#product_section",
+        title: 'About Us',
+        path: "/aboutUs",
         exact: true,
         element: <Home />
     },
    {
-        title: 'Li Ion Solution',
-        path: "/#product_section",
+        title: 'Products',
+        path: '/products',
         exact: true,
-        element: <Home />
+        element: <Products/>
     },
-    {
-        title: 'kk Grid',
-        path: "/#product_section",
-        exact: true,
-        element: <Home />
-    }
+   
    
 ]
