@@ -15,7 +15,7 @@ const Intro = () => {
     accessiibility: true,
     autoplay: false,
     // autoplaySpeed: 5000,
-    arrows: true,
+    arrows: false,
     pauseOnHover: true,
     draggable: true,
     // padding: 0,
