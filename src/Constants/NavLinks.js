@@ -1,6 +1,7 @@
 import Aboutus from "../Pages/About-Us/Aboutus";
 import ContactUs from "../Pages/Contact-Us/ContactUs";
 import Home from "../Pages/Home/Home";
+import Prodetail from "../Pages/ProDetail/Prodetail";
 import Products from "../Pages/Products/Products";
 
 export const navLinks = [
@@ -28,6 +29,12 @@ export const navLinks = [
         path:'/contactUs',
         exact: true,
         element: <ContactUs/>
+    },
+    {
+        title:'product detail',
+        path:'/productDetail',
+        exact:true,
+        element: <Prodetail/>,
     }
    
    
