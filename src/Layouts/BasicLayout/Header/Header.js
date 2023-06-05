@@ -89,12 +89,12 @@ const Header = ({handleLinkClick, activeLink}) => {
           <div
             className={`row ${styles.headerContainer} justify-content-center align-items-center`}
           >
-            <div className={`col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center pe-0 ${styles.headerLogo}`} >
-              <NavLink to={'/'}>
+            <div className={`col-sm-2 col-md-2 col-lg-2 d-flex justify-content-center pe-0 ${styles.headerLogo}`} >
+              <NavLink to={'/'} onClick={() => handleLinkClick(1)}>
               <img src={kkLogo} alt="logo" className="img-fluid" />
               </NavLink>
             </div>
-            <div className=" col-sm-8 col-md-8 d-flex justify-content-start">
+            <div className=" col-sm-8 col-md-8 col-lg-8 d-flex justify-content-start">
               <ul className={styles.headerList}>
               <li
                      
@@ -117,9 +117,9 @@ const Header = ({handleLinkClick, activeLink}) => {
                 
               </ul>
             </div>
-            <div className="col-sm-2 col-md-2">
+            <div className="col-sm-2 col-md-2 col-lg-2">
               <NavLink to='/contactUs' onClick={() => handleLinkClick(4)}>
-              <button className={styles.joinUsBtn}><p>Request A Qoute</p></button>
+              <button className={styles.joinUsBtn}><p>Contact Us</p></button>
               </NavLink>
             
             </div>

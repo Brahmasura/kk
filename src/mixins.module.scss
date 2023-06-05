@@ -57,6 +57,13 @@
   align-items: end;
 }
 
+@mixin y-top{
+  display:flex;
+  flex-direction:column;
+  justify-content:start;
+  align-items: center;
+}
+
 
 
 // for background size and position
