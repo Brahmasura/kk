@@ -14,6 +14,11 @@ const Header = ({handleLinkClick, activeLink}) => {
   //   setActiveLink(index);
   // }
 
+  // for the mobile nav
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 576px)");
 
@@ -44,36 +49,39 @@ const Header = ({handleLinkClick, activeLink}) => {
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              onClick={handleNavCollapse}
+              // data-bs-toggle="collapse"
+              // data-bs-target="#navbarTogglerDemo01"
+              // aria-controls="navbarTogglerDemo01"
+              // aria-expanded="false"
+              // aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div className={`${
+          isNavCollapsed ? "collapse" : ""
+        } navbar-collapse`} id="navbarTogglerDemo01">
               <ul className="navbar-nav ms-auto">
                 <li className="navbar-item">
-                  <a className="nav-link" href="#home_section">
+                  <NavLink  to={'/'} className="nav-link" onClick={handleNavCollapse}>
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="navbar-item">
-                  <a className="nav-link" href="#product_section">
+                  <NavLink  to={'/aboutUs'} className="nav-link" onClick={handleNavCollapse}>
                     About Us
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="navbar-item">
-                  <a className="nav-link" href="#product_section">
+                  <NavLink  to={'/products'} className="nav-link" onClick={handleNavCollapse}>
                     Products
-                  </a>
+                  </NavLink>
                 </li>
               
                 <li className="navbar-item">
-                  <a href="#contact_section">
-                    <button className={styles.joinUsBtn}>Get kk</button>
-                  </a>
+                  <NavLink  to={'/contactUs'} onClick={handleNavCollapse}>
+                    <button className={styles.joinUsBtn}>Contact Us</button>
+                  </NavLink>
                 </li>
               </ul>
             </div>
