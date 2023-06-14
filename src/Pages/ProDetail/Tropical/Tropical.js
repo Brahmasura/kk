@@ -44,7 +44,7 @@ const Tropical = ({ images, heading, description }) => {
       {
         breakpoint: 1450,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
         },
       },
@@ -121,6 +121,9 @@ const Tropical = ({ images, heading, description }) => {
               </div>
               <div className={tropical.sliderPics}>
                 <img src={imgFour} alt="product detail" />
+              </div>
+              <div className={tropical.sliderPics}>
+                <img src={imgTwo} alt="product detail" />
               </div>
             </Slider>
            
