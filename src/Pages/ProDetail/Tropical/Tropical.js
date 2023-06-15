@@ -12,12 +12,11 @@ const Tropical = ({ images, heading, description }) => {
   const imgFour = images[3];
 
   const imageList = [
-    {image:imgOne},
-    {image:imgTwo},
-    {image:imgThree},
-    {image:imgFour}
-
-  ]
+    { image: imgOne },
+    { image: imgTwo },
+    { image: imgThree },
+    { image: imgFour },
+  ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -107,8 +106,6 @@ const Tropical = ({ images, heading, description }) => {
               <p>{description}</p>
             </div>
 
-
-           
             <Slider {...tropicSettings} className="tropicSlide">
               <div className={tropical.sliderPics}>
                 <img src={imgOne} alt="product detail" />
@@ -126,7 +123,6 @@ const Tropical = ({ images, heading, description }) => {
                 <img src={imgTwo} alt="product detail" />
               </div>
             </Slider>
-           
           </div>
         </div>
       </div>
