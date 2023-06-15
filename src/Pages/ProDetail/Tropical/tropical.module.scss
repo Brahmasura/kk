@@ -15,6 +15,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color:#FFF6F6 !important;
+  @include y-center;
 
   .rightColText {
     height: 60%;
@@ -47,10 +49,14 @@
   }
 }
 
+
+
 .sliderPics {
   @include x-center;
+  height:91px;
+  width:80%;
   img{
-    width:78% !important;
+    width:83% !important;
     // height:20% !important;
   }
 }
