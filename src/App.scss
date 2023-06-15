@@ -165,8 +165,14 @@ width:80%;
 }
 
 
-// @media (max-width: 576px) {
-//   .slick-slide {
-//     padding: 0 15px;
-//   }
-// }
+@media (max-width: 576px) {
+ .tropicSlide{
+  .slick-prev{
+    left: -9.2% !important;
+  }
+  
+  .slick-next{
+    right: -4.8% !important;
+  }
+ }
+}
