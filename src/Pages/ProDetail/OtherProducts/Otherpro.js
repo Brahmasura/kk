@@ -26,7 +26,7 @@ const Otherpro = () => {
               <h1>Other Products</h1>
             </div>
             <div className={`col-3 col-sm-6 col-md-6 col-lg-6 ${otherPro.textRight}`}>
-              <NavLink to={"/products"} className={otherPro.viewAll}>
+              <NavLink to={"/products"} className={otherPro.viewAll} onClick={() => window.scrollTo(0, 0)}>
                 view all
               </NavLink>
             </div>
