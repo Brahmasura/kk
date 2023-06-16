@@ -50,7 +50,7 @@ const Packaging = ({ handleLinkClick }) => {
 
       </ul> */}
 
-      <NavLink to={"/aboutUs"} onClick={() => handleLinkClick(2)}>
+      <NavLink to={"/aboutUs"} onClick={() => {handleLinkClick(2); window.scrollTo(0, 0)}}>
         Learn More
       </NavLink>
 
