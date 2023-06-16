@@ -55,16 +55,40 @@
   left: 0;
 }
 
+@media (max-width: 992px) and (orientation: landscape) {
+  .packContainer {
+    height: 100vh;
+  }
+
+  .picOne {
+    width: 16%;
+  }
+
+  .picTwo {
+    width: 16%;
+  }
+}
+
 @media (max-width: 576px) {
   .packContainer {
     height: 100vh;
   }
 
   .picOne {
-    width: 40%;
+    width: 35%;
   }
 
   .picTwo {
-    width: 40%;
+    width: 35%;
+  }
+}
+
+@media (max-width: 370px) {
+  .picOne {
+    width: 30%;
+  }
+
+  .picTwo {
+    width: 30%;
   }
 }
