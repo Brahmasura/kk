@@ -40,7 +40,7 @@ const Otherpro = () => {
             {ProductList.slice(0, 4).map((product, index) => (
               <div
                 key={index}
-                className={`col-6 col-sm-6 col-md-3 col-lg-3 ${otherPro.productImage}`}
+                className={`col-6 col-sm-3 col-md-3 col-lg-3 ${otherPro.productImage}`}
                 onClick={() => handleProductClick(product)}
               >
                 <img src={product.images[0]} alt="product pics" />
