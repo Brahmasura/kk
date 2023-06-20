@@ -2,12 +2,15 @@ import "./App.scss";
 import { Route, Routes } from "react-router-dom";
 import { navLinks } from './Constants/NavLinks';
 import BasicLayout from "./Layouts/BasicLayout/BasicLayout";
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import Home from "./Pages/Home/Home";
 import Aboutus from "./Pages/About-Us/Aboutus";
 import Products from "./Pages/Products/Products";
 import ContactUs from "./Pages/Contact-Us/ContactUs";
 import Prodetail from "./Pages/ProDetail/Prodetail";
+
+
+export const LinkContext = createContext();
 
 
 
@@ -17,6 +20,13 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('activeLink', activeLink.toString());
+    console.log("activeLink is", activeLink);
+
+
+    // this is the cleanup function that is not working right now but will look for solution
+    // return() => {
+    //   localStorage.setItem('activeLink', 1);
+    // };
   }, [activeLink]);
 
   const handleLinkClick = (index) => {
@@ -25,12 +35,13 @@ function App() {
 
   return (
     <div className="App">
-      <BasicLayout className="theLayout"  handleLinkClick={handleLinkClick} activeLink= {activeLink}>
+    <LinkContext.Provider value={{activeLink, handleLinkClick}}>
+      <BasicLayout className="theLayout" >
         <Routes>
 
-        <Route path="/" exact element={<Home handleLinkClick={handleLinkClick}/>} />
+        <Route path="/" exact element={<Home />} />
           <Route path="/aboutUs" exact element={<Aboutus/>} />
-          <Route path='/products' exact element={<Products handleLinkClick={handleLinkClick}/>} />
+          <Route path='/products' exact element={<Products />} />
           <Route path='/contactUs' exact element={<ContactUs/>} />
           <Route path='/productDetail' exact element={<Prodetail/>} />
 
@@ -45,6 +56,7 @@ function App() {
           })} */}
         </Routes>
       </BasicLayout>
+      </LinkContext.Provider>
     </div>
   );
 }

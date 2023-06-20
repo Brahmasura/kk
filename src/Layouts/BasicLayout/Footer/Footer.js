@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import footer from "./Footer.module.scss";
 import kkLogo from "../../../Assets/header/kkLogo.svg";
 import { NavLink } from "react-router-dom";
 import instagram from "../../../Assets/footer/instagram.png";
 import whatsapp from "../../../Assets/footer/whatsapp.png";
 import linkedin from "../../../Assets/footer/linkedin.png";
+import {LinkContext} from "../../../App";
 
-const Footer = ({ handleLinkClick }) => {
+
+const Footer = () => {
+  const {handleLinkClick} = useContext(LinkContext);
   return (
     <>
       <footer className={`container-fluid ${footer.footerContainer}`}>

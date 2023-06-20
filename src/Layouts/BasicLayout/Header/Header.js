@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 import kkLogo from "../../../Assets/header/kkLogo.svg";
 import { NavLink } from "react-router-dom";
+import {LinkContext} from '../../../App';
 
-const Header = ({ handleLinkClick, activeLink }) => {
-  // for list icon clicks
+const Header = () => {
+  const {activeLink, handleLinkClick} = useContext(LinkContext);
+
 
   // for mobile screen check
   const [isMobile, setIsMobile] = useState(false);

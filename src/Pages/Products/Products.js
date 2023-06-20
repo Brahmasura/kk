@@ -4,7 +4,7 @@ import Productintro from './Components/Productintro/Productintro';
 import Catalogue from './Components/Catalogue/Catalogue';
 import Learn from './Components/Learn/Learn';
 
-const Products = ({handleLinkClick}) => {
+const Products = () => {
   return (
     <div>
     <Productintro/>

@@ -4,13 +4,13 @@ import Footer from "./Footer/Footer";
 import layoutStyle from './BasicLayout.module.scss';
 // import Scrollbar from 'smooth-scrollbar'
 
-const BasicLayout = ({ children, handleLinkClick, activeLink }) => {
+const BasicLayout = ({ children}) => {
   return (
     // <div className="scroller">
   <div>
-      <Header handleLinkClick={handleLinkClick} activeLink={activeLink} />
+      <Header  />
       <div>{children}</div>
-      <Footer handleLinkClick={handleLinkClick} activeLink={activeLink} />
+      <Footer  />
     </div>
   );
 };
