@@ -8,15 +8,11 @@ const Header = () => {
   const {activeLink, handleLinkClick} = useContext(LinkContext);
 
 
-  // for mobile screen check
+ 
   const [isMobile, setIsMobile] = useState(false);
-  // const [activeLink, setActiveLink] = useState(1);
 
-  // const handleLinkClick = (index) => {
-  //   setActiveLink(index);
-  // }
 
-  // for the mobile nav
+
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
@@ -54,11 +50,7 @@ const Header = () => {
               className="navbar-toggler"
               type="button"
               onClick={handleNavCollapse}
-              // data-bs-toggle="collapse"
-              // data-bs-target="#navbarTogglerDemo01"
-              // aria-controls="navbarTogglerDemo01"
-              // aria-expanded="false"
-              // aria-label="Toggle navigation"
+            
             >
               <span className="navbar-toggler-icon"></span>
             </button>

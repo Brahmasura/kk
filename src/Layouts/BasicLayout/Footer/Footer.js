@@ -10,6 +10,7 @@ import {LinkContext} from "../../../App";
 
 const Footer = () => {
   const {handleLinkClick} = useContext(LinkContext);
+
   return (
     <>
       <footer className={`container-fluid ${footer.footerContainer}`}>
@@ -19,24 +20,7 @@ const Footer = () => {
             <NavLink to="/" onClick={() => handleLinkClick(1)}><img src={kkLogo} alt="brand logo" /></NavLink>
           </div>
 
-          {/* second col
-          <div className={`col-md-8 col-lg-8 ${footer.footColTwo}`}>
-            <ul>
-        
-              <li>
-                <NavLink to="/" onClick={() => handleLinkClick(1)}>Home</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/aboutUs"} onClick={() => handleLinkClick(2)}>About Us</NavLink>
-              </li>
-              <li>
-                <NavLink to="/products" onClick={() => handleLinkClick(3)}>Products</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contactUs" onClick={() => handleLinkClick(4)}>Request A Qoute</NavLink>
-              </li>
-            </ul>
-          </div> */}
+       
 
           {/* second col */}
           <div className={` col-sm-8 col-md-8 col-lg-8 ${footer.footColTwo}`}>
@@ -44,28 +28,28 @@ const Footer = () => {
               <div
                 className={`col-12 col-sm-3 col-md-3 col-lg-3 ${footer.listCol}`}
               >
-                <NavLink to="/" onClick={() => handleLinkClick(1)}>
+                <NavLink to="/" onClick={() => {handleLinkClick(1); window.scrollTo(0,0)}}>
                   Home
                 </NavLink>
               </div>
               <div
                 className={`col-12 col-sm-3 col-md-3 col-lg-3 ${footer.listCol}`}
               >
-                <NavLink to={"/aboutUs"} onClick={() => handleLinkClick(2)}>
+                <NavLink to={"/aboutUs"} onClick={() => {handleLinkClick(2); window.scrollTo(0,0)}}>
                   About Us
                 </NavLink>
               </div>
               <div
                 className={`col-12 col-sm-3 col-md-3 col-lg-3 ${footer.listCol}`}
               >
-                <NavLink to="/products" onClick={() => handleLinkClick(3)}>
+                <NavLink to="/products" onClick={() => {handleLinkClick(3); window.scrollTo(0,0)}}>
                   Products
                 </NavLink>
               </div>
               <div
                 className={`col-12 col-sm-3 col-md-3 col-lg-3 ${footer.listCol}`}
               >
-                <NavLink to="/contactUs" onClick={() => handleLinkClick(4)}>
+                <NavLink to="/contactUs" onClick={() => {handleLinkClick(4);window.scrollTo(0,0)}}>
                  Contact Us
                 </NavLink>
               </div>
