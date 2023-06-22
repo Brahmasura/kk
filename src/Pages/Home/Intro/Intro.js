@@ -67,27 +67,21 @@ const Intro = () => {
       <div className={introStyle.introContainer}>
         <h1>Sustainable Solutions</h1>
         <p>High-quality, compliant, and sustainable cannabis packaging</p>
-        {/* <button>
-          <p>OUR PRODUCTS</p>
-        </button> */}
+       
       </div>
 
       {/* second slide */}
       <div className={introStyle.introContainer}>
         <h1>Sustainable Solutions</h1>
         <p>High-quality, compliant, and sustainable cannabis packaging</p>
-        {/* <button>
-          <p>OUR PRODUCTS</p>
-        </button> */}
+       
       </div>
 
       {/* third slide */}
       <div className={introStyle.introContainer}>
         <h1>Sustainable Solutions</h1>
         <p>High-quality, compliant, and sustainable cannabis packaging</p>
-        {/* <button>
-          <p>OUR PRODUCTS</p>
-        </button> */}
+       
       </div>
     </Slider>
   );

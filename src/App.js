@@ -15,19 +15,21 @@ export const LinkContext = createContext();
 
 
 function App() {
-  const storedActiveLink = localStorage.getItem('activeLink');
-  const [activeLink, setActiveLink] = useState(storedActiveLink ? parseInt(storedActiveLink) :1);
-
-  useEffect(() => {
-    localStorage.setItem('activeLink', activeLink.toString());
-    console.log("activeLink is", activeLink);
+  // const storedActiveLink = localStorage.getItem('activeLink');
+  // const [activeLink, setActiveLink] = useState(storedActiveLink ? parseInt(storedActiveLink) :1);
+  const [activeLink, setActiveLink] = useState(1);
 
 
-    // this is the cleanup function that is not working right now but will look for solution
-    // return() => {
-    //   localStorage.setItem('activeLink', 1);
-    // };
-  }, [activeLink]);
+  // useEffect(() => {
+  //   localStorage.setItem('activeLink', activeLink.toString());
+  //   console.log("activeLink is", activeLink);
+
+
+  //   // this is the cleanup function that is not working right now but will look for solution
+  //   // return() => {
+  //   //   localStorage.setItem('activeLink', 1);
+  //   // };
+  // }, [activeLink]);
 
   const handleLinkClick = (index) => {
     setActiveLink(index);
