@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import packaging from "./packaging.module.scss";
 import picOne from "../../../Assets/home/packagingPicOne.png";
 import picTwo from "../../../Assets/home/packagingPicTwo.png";
 import { NavLink } from "react-router-dom";
+import {LinkContext} from "../../../App";
 
-const Packaging = ({ handleLinkClick }) => {
+const Packaging = () => {
+  const {handleLinkClick} = useContext(LinkContext);
+  
   return (
     <div className={packaging.packContainer}>
       <h1>Why Us?</h1>

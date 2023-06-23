@@ -41,7 +41,7 @@ const Otherpro = () => {
               <div
                 key={index}
                 className={`col-6 col-sm-3 col-md-3 col-lg-3 ${otherPro.productImage}`}
-                onClick={() => handleProductClick(product)}
+                onClick={() => {handleProductClick(product); window.scrollTo(0,0)}}
               >
                 <img src={product.images[0]} alt="product pics" />
               </div>
