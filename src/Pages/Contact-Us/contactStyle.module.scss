@@ -95,6 +95,7 @@
       line-height: 18px;
       text-transform: uppercase;
       color: #ffffff;
+      margin-bottom:0;
     }
   }
 }
@@ -167,6 +168,11 @@
 @media (max-width: 992px) and (min-height: 1000px) and (orientation: portrait) {
   .contactContainer {
     height: 85vh;
+
+    img{
+      position:absolute;
+      bottom:0;
+    }
   }
 }
 

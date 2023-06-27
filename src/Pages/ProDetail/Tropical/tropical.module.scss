@@ -13,7 +13,7 @@
   @include y-center;
 
   .rightColText {
-    height: 60%;
+    // height: 60%;
     h1 {
       font-family: "Inter";
       font-style: normal;
@@ -60,7 +60,7 @@
 
   .rightCol {
     .rightColText {
-      height: 70%;
+      height: auto;
       h1 {
         font-size: 32px;
       }
@@ -80,6 +80,7 @@
 
   .rightCol {
     .rightColText {
+      
       h1 {
         font-size: 19px;
         line-height: 23px;
