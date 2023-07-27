@@ -6,17 +6,17 @@ import badgeThree from "../../../../Assets/aboutUs/badgeThree.png";
 import badgeFour from "../../../../Assets/aboutUs/badgeFour.png";
 
 const numberList = [
-  { image: badgeOne, heading: "3.9M ", para: "Hosts on our platform" },
-  { image: badgeTwo, heading: "600K", para: "Avarage stays each night" },
-  { image: badgeThree, heading: "9K", para: "New hosts per month" },
-  { image: badgeFour, heading: "6.4M", para: "Total happy guests" },
+  { image: badgeOne, heading: "10000+ ", para: "Number of happy customers served" },
+  { image: badgeTwo, heading: "8 Working Days", para: "Delivery period" },
+  { image: badgeThree, heading: "95%", para: "Color accuracy rate" },
+  { image: badgeFour, heading: "6.4M", para: "Service & Quality control assurance" },
 ];
 
 const Number = () => {
   return(
     <div className={number.numberContainer}>
     <h1>Some Numbers That Matter</h1>
-    <p>We share common trends and strategies for improving your rental income and making sure you stay in high demand.</p>
+    {/* <p>We share common trends and strategies for improving your rental income and making sure you stay in high demand.</p> */}
 
     <div className={`container-fluid ${number.gridContainer}`}>
         <div className="row">

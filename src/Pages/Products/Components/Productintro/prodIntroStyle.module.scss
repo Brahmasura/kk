@@ -2,7 +2,9 @@
 
 .prodIntroContainer {
   height: 70vh;
-  background: url("../../../../Assets/home/introPic.png");
+  // background: url("../../../../Assets/home/introPic.png");
+  background: url("../../../../Assets/home/updated//homeProSix.jpg");
+
   @include bg-center;
   @include y-center;
   position: relative;

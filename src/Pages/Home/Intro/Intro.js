@@ -3,6 +3,50 @@ import introStyle from "./intro.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.scss";
+// import homeProOne from "../../../Assets/home/updated/homeProOne.png";
+// import homeProTwo from "../../../Assets/home/updated/homeProTwo.png";
+// import homeProThree from "../../../Assets/home/updated/homeProThree.png";
+// import homeProFour from "../../../Assets/home/updated/homeProFour.png";
+// import homeProFive from "../../../Assets/home/updated/homeProFive.png";
+// import homeProSix from "../../../Assets/home/updated/homeProSix.jpg";
+
+// const HomeProducts = [
+//   {
+//     image: homeProOne,
+//     heading: "Sustainable Solutions",
+//     paragraph: "High-quality, compliant, and sustainable packaging",
+//   },
+
+//   {
+//     image: homeProTwo,
+//     heading: "Sustainable Solutions",
+//     paragraph: "High-quality, compliant, and sustainable packaging",
+//   },
+
+//   {
+//     image: homeProThree,
+//     heading: "Sustainable Solutions",
+//     paragraph: "High-quality, compliant, and sustainable packaging",
+//   },
+
+//   {
+//     image: homeProFour,
+//     heading: "Sustainable Solutions",
+//     paragraph: "High-quality, compliant, and sustainable packaging",
+//   },
+
+//   {
+//     image: homeProFive,
+//     heading: "Sustainable Solutions",
+//     paragraph: "High-quality, compliant, and sustainable packaging",
+//   },
+
+//   {
+//     image: homeProSix,
+//     heading: "Sustainable Solutions",
+//     paragraph: "High-quality, compliant, and sustainable packaging",
+//   },
+// ];
 
 const Intro = () => {
   // for the slider
@@ -61,30 +105,63 @@ const Intro = () => {
     ],
   };
 
+
+
   return (
     <Slider {...introSettings}>
-      {/* first slide */}
-      <div className={introStyle.introContainer}>
+      {/* {HomeProducts.map((product, id) => {
+        return (
+          <div key={id}
+            style={{
+              backgroundImage: `url(${product.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            className={introStyle.introContainer}
+          >
+            <h1>{product.heading}</h1>
+            <p>{product.paragraph}</p>
+          </div>
+        );
+      })} */}
+
+      <div className={`${introStyle.introContainer} ${introStyle.proOneStyle}`}>
         <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable cannabis packaging</p>
-       
+        <p>High-quality, compliant, and sustainable packaging</p>
       </div>
 
-      {/* second slide */}
-      <div className={introStyle.introContainer}>
+      <div className={`${introStyle.introContainer} ${introStyle.proTwoStyle}`}>
         <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable cannabis packaging</p>
-       
+        <p>High-quality, compliant, and sustainable packaging</p>
       </div>
 
-      {/* third slide */}
-      <div className={introStyle.introContainer}>
+      <div className={`${introStyle.introContainer} ${introStyle.proThreeStyle}`}>
         <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable cannabis packaging</p>
-       
+        <p>High-quality, compliant, and sustainable packaging</p>
       </div>
+
+      <div className={`${introStyle.introContainer} ${introStyle.proFourStyle}`}>
+        <h1>Sustainable Solutions</h1>
+        <p>High-quality, compliant, and sustainable packaging</p>
+      </div>
+
+      <div className={`${introStyle.introContainer} ${introStyle.proFiveStyle}`}>
+        <h1>Sustainable Solutions</h1>
+        <p>High-quality, compliant, and sustainable packaging</p>
+      </div>
+
+      <div className={`${introStyle.introContainer} ${introStyle.proSixStyle}`}>
+        <h1>Sustainable Solutions</h1>
+        <p>High-quality, compliant, and sustainable packaging</p>
+      </div> 
+
+      
     </Slider>
   );
 };
 
 export default Intro;
+
+
+
+

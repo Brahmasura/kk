@@ -1,9 +1,38 @@
 @import "../../../mixins.module.scss";
 
-.introContainer {
-  background: url("../../../Assets/home/introPic.png");
-
+.proOneStyle {
+  background: url("../../../Assets/home/updated/homeProOne.jpg");
   @include bg-center;
+}
+
+.proTwoStyle {
+  background: url("../../../Assets/home/updated/homeProTwo.jpg");
+  @include bg-center;
+}
+
+.proThreeStyle {
+  background: url("../../../Assets/home/updated/homeProThree.jpg");
+  @include bg-center;
+}
+
+.proFourStyle {
+  background: url("../../../Assets/home/updated/homeProFour.jpg");
+  @include bg-center;
+}
+
+.proFiveStyle {
+  background: url("../../../Assets/home/updated/homeProFive.jpg");
+  @include bg-center;
+}
+
+.proSixStyle {
+  background: url("../../../Assets/home/updated/homeProSix.jpg");
+  @include bg-center;
+}
+
+.introContainer {
+  // background: url("../../../Assets/home/updated/homeProOne.png");
+  // @include bg-center;
   @include y-center;
   height: 89vh;
 
@@ -14,7 +43,8 @@
     font-size: 48px;
     line-height: 66px;
     letter-spacing: 2px;
-    color: #ffffff;
+    // color: #ffffff;
+    color: black;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 0.7%;
   }
@@ -25,7 +55,8 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
-    color: #ffffff;
+    // color: #ffffff;
+    color: black;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 2.3%;
   }
