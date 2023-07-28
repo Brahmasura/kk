@@ -1,6 +1,5 @@
 @import "./mixins.module.scss";
 
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -14,8 +13,8 @@
   background-color: rgba(154, 154, 154, 0.15);
 }
 
-::-webkit-scrollbar{
-display:none !important;
+::-webkit-scrollbar {
+  display: none !important;
 }
 
 // .desktop-container {
@@ -80,13 +79,10 @@ footer {
   color: #ffffff !important;
 }
 
-
-
 // slider setting for the itemSlide
 .itemSlide {
   .slick-slide {
     padding: 0 10px;
-   
   }
 
   // .slick-prev {
@@ -95,27 +91,23 @@ footer {
   //   left: 10% !important;
   // }
 
-
   // .slick-prev:before, .slick-prev::before {
   //   content: url('./Assets/Slick/icon_arrow_left.svg') !important;
   //   background: transparent !important;
   // }
-
 
   .slick-prev {
     z-index: 5 !important;
     top: 40% !important;
     left: 10% !important;
   }
-  
+
   .slick-prev::before,
   .slick-prev:before {
-    content: url('./Assets/Slick/icon_arrow_left.svg') !important;
+    content: url("./Assets/Slick/icon_arrow_left.svg") !important;
     background: transparent !important;
     position: absolute;
   }
-  
-
 
   .slick-next {
     z-index: 5 !important;
@@ -123,32 +115,30 @@ footer {
     right: 10% !important;
   }
 
-  .slick-next:before, .slick-next::before {
-    content: url('./Assets/Slick/icon_arrow_right.svg') !important;
+  .slick-next:before,
+  .slick-next::before {
+    content: url("./Assets/Slick/icon_arrow_right.svg") !important;
     background: transparent !important;
     position: absolute;
   }
 }
 
-
-.tropicSlide{
-  width:80%;
+.tropicSlide {
+  width: 80%;
   // .slick-slider{
   //   width: 68% !important;
   //   text-align:center !important;
   // }
-  
-  
-  
+
   .slick-prev {
     z-index: 5 !important;
-    left: -14% !important;
+    left: -16% !important;
     top: 15% !important;
   }
 
   .slick-prev::before,
-  .slick-prev:before{
-    content: url('./Assets/Slick/icon_arrow_left.svg') !important;
+  .slick-prev:before {
+    content: url("./Assets/Slick/icon_arrow_left.svg") !important;
     background: transparent;
     position: absolute;
   }
@@ -159,20 +149,30 @@ footer {
     right: -5.2% !important;
   }
 
-  .slick-next:before, .slick-next::before {
-      content: url('./Assets/Slick/icon_arrow_right.svg') !important;
-      background: transparent;
-      position: absolute;
-    }
+  .slick-next:before,
+  .slick-next::before {
+    content: url("./Assets/Slick/icon_arrow_right.svg") !important;
+    background: transparent;
+    position: absolute;
+  }
 }
 
+@media (max-width:992px) and (orientation:portrait){
+  .tropicSlide{
+    .slick-prev{
+      left:-24% !important;
+    }
+  }
+}
 
 @media (max-width: 576px) {
-  
-  .tropicSlide{
+  .tropicSlide {
     .slick-slide {
       padding: 0 15px;
     }
+
+    .slick-prev {
+      left: -22% !important;
+    }
   }
- 
 }

@@ -49,13 +49,15 @@
   @include x-center;
   cursor: pointer;
   img{
+    height:100%;
     width:100%;
   }
 }
 
 @media (max-width:992px){
   .otherProContainer{
-    height:auto;
+    // height:auto;
+    max-height:33vh;
   }
 }
 
@@ -74,6 +76,7 @@
 @media (max-width: 576px) {
 .otherProContainer{
   height:70vh;
+  max-height:unset;
 }
   .textLeft{
     h1{
