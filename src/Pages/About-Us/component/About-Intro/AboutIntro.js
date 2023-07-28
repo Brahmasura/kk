@@ -29,7 +29,7 @@ const AboutIntro = () => {
         design for both food and non-food services, MAK Flexible Packaging
         employees provide an organised method in each stage of the package
         manufacturing process,from design to dispatch. Every level of quality
-        control is ensured via quality inspection.Throughout our manufacturing
+        control is ensured via quality inspection. Throughout our manufacturing
         process, we pledge to employ eco-friendly materials and
         renewable resources wherever possible. <br />
         MAK Flexible Packaging Industry firmly believes in exceeding client

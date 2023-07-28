@@ -76,7 +76,7 @@ const ProductList = [
     images: [catThree, catThree, catThree, catThree, catThree],
     heading: "2 and 3 Layer printed and Non-printed Laminated Rolls",
     description:
-      "These printed 2 and 3-layer laminated packaging rolls that are reliable and of high quality! They are disposable and eco-friendly with a thickness of 30 Micron to 150micronsdepending upon the packaging need. It is essential to have good finishing in packaging rolls, especially food packaging and we understand this very accurately!  These laminated Packaging Rolls are made with utmost care and premium quality! These pouches are weatherproof and lightweight.",
+      "These printed 2 and 3-layer laminated packaging rolls that are reliable and of high quality! They are disposable and eco-friendly with a thickness of 30 Micron to 150 microns depending upon the packaging need. It is essential to have good finishing in packaging rolls, especially food packaging and we understand this very accurately!  These laminated Packaging Rolls are made with utmost care and premium quality! These pouches are weatherproof and lightweight.",
     // "  These printed 2 and 3-layer laminated packaging rolls that" +
     // "are reliable and of high quality! They are disposable and" +
     // "eco-friendly with a thickness of 30 Micron to" +

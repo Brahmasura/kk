@@ -101,7 +101,7 @@ const Items = () => {
             key={index}
             className={itemStyle.slideDiv}
             // style={{ backgroundImage: `url(${product.images[0]})` }}
-            onClick={() => {handleProductClick(product); window.scrollTo(0,0)}}
+            onClick={() => {handleProductClick(product); window.scrollTo(0,0); handleLinkClick(3)}}
           >
             <img src={product.images[0]} alt="the item slide images" />
           </div>

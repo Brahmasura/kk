@@ -105,8 +105,6 @@ const Intro = () => {
     ],
   };
 
-
-
   return (
     <Slider {...introSettings}>
       {/* {HomeProducts.map((product, id) => {
@@ -126,42 +124,54 @@ const Intro = () => {
       })} */}
 
       <div className={`${introStyle.introContainer} ${introStyle.proOneStyle}`}>
-        <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable packaging</p>
+        <div className={introStyle.overlayStyle}>
+          <h1>Sustainable Solutions</h1>
+          <p>High-quality, compliant, and sustainable packaging</p>
+        </div>
       </div>
 
       <div className={`${introStyle.introContainer} ${introStyle.proTwoStyle}`}>
-        <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable packaging</p>
+        <div className={introStyle.overlayStyle}>
+          <h1>Sustainable Solutions</h1>
+          <p>High-quality, compliant, and sustainable packaging</p>
+        </div>
       </div>
 
-      <div className={`${introStyle.introContainer} ${introStyle.proThreeStyle}`}>
-        <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable packaging</p>
+      <div
+        className={`${introStyle.introContainer} ${introStyle.proThreeStyle}`}
+      >
+        <div className={introStyle.overlayStyle}>
+          <h1>Sustainable Solutions</h1>
+          <p>High-quality, compliant, and sustainable packaging</p>
+        </div>
       </div>
 
-      <div className={`${introStyle.introContainer} ${introStyle.proFourStyle}`}>
-        <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable packaging</p>
+      <div
+        className={`${introStyle.introContainer} ${introStyle.proFourStyle}`}
+      >
+        <div className={introStyle.overlayStyle}>
+          <h1>Sustainable Solutions</h1>
+          <p>High-quality, compliant, and sustainable packaging</p>
+        </div>
       </div>
 
-      <div className={`${introStyle.introContainer} ${introStyle.proFiveStyle}`}>
-        <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable packaging</p>
+      <div
+        className={`${introStyle.introContainer} ${introStyle.proFiveStyle}`}
+      >
+        <div className={introStyle.overlayStyle}>
+          <h1>Sustainable Solutions</h1>
+          <p>High-quality, compliant, and sustainable packaging</p>
+        </div>
       </div>
 
       <div className={`${introStyle.introContainer} ${introStyle.proSixStyle}`}>
-        <h1>Sustainable Solutions</h1>
-        <p>High-quality, compliant, and sustainable packaging</p>
-      </div> 
-
-      
+        <div className={introStyle.overlayStyle}>
+          <h1>Sustainable Solutions</h1>
+          <p>High-quality, compliant, and sustainable packaging</p>
+        </div>
+      </div>
     </Slider>
   );
 };
 
 export default Intro;
-
-
-
-

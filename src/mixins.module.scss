@@ -72,3 +72,9 @@
   background-size:cover;
   background-position:center;
 }
+
+@mixin bg-contain-nr{
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+}
