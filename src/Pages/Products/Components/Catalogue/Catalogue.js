@@ -25,6 +25,7 @@ const Catalogue = () => {
             key={index}
             className={`col-6 col-sm-3 col-md-3 col-lg-3 ${catStyle.catItem}`}
             onClick={() => {handleProductClick(cat); window.scrollTo(0,0)}}
+            title={cat.heading}
           >
             {/* <NavLink
               to={"/productDetail"}

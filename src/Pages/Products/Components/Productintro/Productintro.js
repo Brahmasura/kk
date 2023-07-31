@@ -10,7 +10,7 @@ const Productintro = () => {
       <p>
         We are a one-stop solution for your packaging needs!! Our product range
         includes a wide and assorted range of Laminated Food Packaging Pouches,
-        Laminated Packaging Rolls, Stand –Up Pouches, LDPE Pouches, 3 Side
+        Laminated Packaging Rolls, Stand–Up Pouches, LDPE Pouches, 3 Side
         Sealed Pouches, Metalized Films, Incense Stick Pouches, Matte Finish
         Pouches, Flexographic Printed Pouches, Printed BOPP Pouches, 3 Side
         Sealed Bags, and Polypropylene Pouches.

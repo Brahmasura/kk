@@ -129,7 +129,7 @@ const ProductList = [
     images: [pro65, pro62, pro63, pro64, pro61],
     heading: "Plain LDPE Pouch",
     description:
-      "These transparent plain LDPE pouches are waterproof are great for international packing! They come in various sizes with 40micron to 150micron thickness.",
+      "These transparent plain LDPE pouches are waterproof are great for international packing! They come in various sizes with 40 micron to 150 micron thickness.",
     // " These transparent plain LDPE pouches are waterproof are" +
     // "great for international packing! They come in various sizes" +
     // "with 40micron to 150micron thickness.  ",
