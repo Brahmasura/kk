@@ -41,11 +41,12 @@ function App() {
       <BasicLayout className="theLayout" >
         <Routes>
 
-        <Route path="/" exact element={<Home />} />
-          <Route path="/aboutUs" exact element={<Aboutus/>} />
-          <Route path='/products' exact element={<Products />} />
-          <Route path='/contactUs' exact element={<ContactUs/>} />
-          <Route path='/productDetail' exact element={<Prodetail/>} />
+          <Route path="/aboutUs"  element={<Aboutus/>} />
+          <Route path='/products'  element={<Products />} />
+          <Route path='/contactUs'  element={<ContactUs/>} />
+          <Route path='/productDetail'  element={<Prodetail/>} />
+          <Route path="/"  element={<Home />} />
+
 
           {/* {navLinks?.map((item) => {
             return (
